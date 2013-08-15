@@ -1,0 +1,10 @@
+{
+	"name":"urlDisplay",
+	"filename":"urlDisplay.php",
+	"version":"1.0",
+	"description":"Shows current URL, including variables.",
+	"author": {
+		"name":"Nick Perkins",
+		"email":"nick@techs.co.nz"
+	}
+}
