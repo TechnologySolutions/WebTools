@@ -1,5 +1,13 @@
 <?php
 function checkHTTPS() {
+/* 
+	Desc:
+		Returns true if current connection is on HTTPS protcol or port 443.
+	Example:
+		if(checkHTTPS() == true){
+			echo 'Current connection is secure (HTTPS or port 443)';
+		};
+*/
     if(!empty($_SERVER['HTTPS']))
         if($_SERVER['HTTPS'] !== 'off'){return true;}
         else{return false;}
@@ -7,7 +15,13 @@ function checkHTTPS() {
         if($_SERVER['SERVER_PORT'] == 443){return true;}
         else{return false;}
 }
-function urlDisplay(){
+function urlDisplay() {
+/*
+	Desc:
+		Echos current URL including $_GET keys and values.
+	Example:
+		urlDisplay();
+*/
 if(checkHTTPS() == true){$gets = "https://";}else{$gets = "http://";}
 $gets = "http://".$_SERVER['SERVER_NAME'].$_SERVER['PHP_SELF'];
 if(isset($_GET)){
