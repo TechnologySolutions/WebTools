@@ -8,9 +8,9 @@
 
     <title>Technology Solutions Code Repository</title>
 
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/css/bootstrap.min.css">
 
-    <style>body{min-height:2000px;padding-top:70px;}</style>
+    <style>body{padding-top:70px;}</style>
 
     <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
@@ -34,15 +34,6 @@
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Filter <span class="label label-primary">On</span> <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li class="dropdown-header">Filter Preferences</li>
-                <li><a href="#PHP">PHP <span class="label label-default">Off</span></a></li>
-                <li><a href="#Javascript">Javascript <span class="label label-primary">On</span></a></li>
-                <li><a href="#Other">Other <span class="label label-default">Off</span></a></li>
-              </ul>
-            </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="http://www.techs.co.nz">www.techs.co.nz</a></li>
@@ -53,10 +44,8 @@
 
     <div class="container">
 
-      
-        
-        <div class="page-header">
-          <div class="row">
+      <div class="page-header">
+        <div class="row">
           <div class="col-md-8">
             <h1>Code Repository</h1>
             <p>Found on <a href="https://github.com/TechnologySolutions/WebTools">https://github.com/TechnologySolutions/WebTools</a></p>
@@ -66,17 +55,39 @@
           </div>
         </div>
       </div>
-        
 
+      <div class="row">
+        <div class="col-md-6">
+        <form class="form-inline" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+            <a href="#advanced">Advanced Search</a>
+          </form>
+          </div>
+      </div>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Code</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="https://github.com/TechnologySolutions/WebTools/tree/master/urlDisplay">urlDisplay</a></td>
+            <td>Nick Perkins</td>
+            <td><button class="btn btn-default">Expand <b class="caret"></b></button></td>
+          </tr>
+        </tbody>
+      </table>
 
     </div> <!-- /container -->
 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/js/bootstrap.min.js"></script>
-  
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/js/bootstrap.min.js"></script>
 
 </body></html>

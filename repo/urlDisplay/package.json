@@ -7,4 +7,7 @@
 		"name":"Nick Perkins",
 		"email":"nick@techs.co.nz"
 	}
+	"tags": {
+		"php"
+	}
 }

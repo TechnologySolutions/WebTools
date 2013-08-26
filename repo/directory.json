@@ -1,0 +1,7 @@
+[
+{
+	"title": "urlDisplay",
+	"description": "Echos current URL, including $_GET keys and values.",
+	"author": "Nick Perkins"
+}
+]
