@@ -3,5 +3,10 @@
 	"title": "urlDisplay",
 	"description": "Echos current URL, including $_GET keys and values.",
 	"author": "Nick Perkins"
+},
+{
+	"title": "Insert into Head",
+	"description": "Put code, or anything else, into the <head> of a wordpress page, via a custom field.",
+	"author": "Zac Bruce"
 }
 ]

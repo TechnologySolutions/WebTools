@@ -1,0 +1,14 @@
+{
+	"name":"Insert into Head",
+	"filename":"insert-into-head.php",
+	"version":"0.2",
+	"description":"Put code, or anything else, into the <head> of a wordpress page, via a custom field.",
+	"author": {
+		"name":"Zac Bruce",
+		"email":"zac@techs.co.nz"
+	}
+	"tags": {
+		"php".
+		"wordpress"
+	}
+}

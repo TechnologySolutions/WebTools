@@ -1,5 +1,30 @@
+<?php /* PHP PEW PEW PEW BALONEY */
+
+function directorydisplay($title, $author, $description){ 
+    $display = array( 
+    '<tr>', 
+    '<td><a href="#' . $title . '">'. $title . '</a></td>', 
+    '<td>' . $author . '</td>',
+    '<td></td>',
+    '</tr>'
+    ); 
+    return $display; 
+}; 
+
+function jsonloader($location, $debug = false){ 
+    $json = file_get_contents($location); 
+    $jsonArray = json_decode($json, true); 
+    foreach($jsonArray as $key => $val){    
+      if($debug == true){  echo '<pre>'; print_r($jsonArray); echo '</pre>'; }
+      else{
+       echo implode(directorydisplay($val['title'], $val['author'], $val['description'])); 
+      }}};
+
+?>
+
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -77,11 +102,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td><a href="https://github.com/TechnologySolutions/WebTools/tree/master/urlDisplay">urlDisplay</a></td>
-            <td>Nick Perkins</td>
-            <td><button class="btn btn-default">Expand <b class="caret"></b></button></td>
-          </tr>
+          <?php jsonloader('directory.json'); ?>
         </tbody>
       </table>
 
