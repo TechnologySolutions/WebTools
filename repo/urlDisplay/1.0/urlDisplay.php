@@ -23,7 +23,7 @@ function urlDisplay() {
 		urlDisplay();
 */
 if(checkHTTPS() == true){$gets = "https://";}else{$gets = "http://";}
-$gets = "http://".$_SERVER['SERVER_NAME'].$_SERVER['PHP_SELF'];
+$gets = $gets.$_SERVER['SERVER_NAME'].$_SERVER['PHP_SELF'];
 if(isset($_GET)){
 $gets = $gets."?";
 foreach($_GET as $key => $value){
